@@ -1,0 +1,22 @@
+
+-- Build docker image from Dockerfile #4.51
+  Notes: Run this from inside the directory that contains 'Dockerfile'
+  
+  docker image build -t test:latest .
+  Here docker image name is 'test:latest' where 'test' is repository name & 'latest' is tag name 
+    (check this using docker image ls)
+    
+  Run image -> docker container run -d --name web1 -p 8080:8080 test:latest #4.52
+  
+# Inspect Layers in the Docker image  #82
+
+  [
+         "Layers": [
+                  "sha256:788ce2310e2fdbbf81fe21cbcc8a44da4cf648b0339b09c221abacb4cd5fd136",
+                  "sha256:aa4e47c4511638484cd5d95eadd7a8e4da307375ba31ff50d47aa9065dce01e0",
+                  "sha256:b3968bc26fbd527f214f895aeef940a6930c62d853fe8b12bd479f0b53518150",
+                  "sha256:c9748fbf541d3e043521e165b015d45825de33c00a8acb037443cfbd0cb5e677",
+                  "sha256:2f5b0990636a87f1557d64ba39808dcd64031328b2a159c5805115b8e725bbbc"
+              ]
+          },
+  ]  

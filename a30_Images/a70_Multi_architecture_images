@@ -1,0 +1,6 @@
+
+
+  # An image can support multiple architectures
+  # Achieved using, #89
+    + fat manifest
+    + image manifest

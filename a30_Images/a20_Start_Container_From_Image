@@ -1,0 +1,7 @@
+
+
+# Can be done using either of these 2 commands,
+  + docker container run
+  + docker service create
+  
+  

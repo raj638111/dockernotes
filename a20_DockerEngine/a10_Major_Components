@@ -1,0 +1,33 @@
+
+# Major Components #4.57
+
+  1. Docker Client
+  2. Docker daemon
+    - Has REST API & other features implemented #4.60 image
+    - Image management, Image builds, Authentication, security, core networking & orchestration #4.66 
+    - Binary in Linux: -dockerd #4.65
+  3. containerd
+    - Acts as a bridge b/w Docker daemon & runc #4.61
+    - Think this as Container supervisor(Handles container lifecycle operation) #4.62 #4.67
+    - Converts Docker image into OCI bundle for runc #4.63
+    - Has 1: Many relationship with runc. Check diagram here #4.60
+    - Binary in Linux: - docker-containerd
+  4. runc 
+    - Often referred as 'container runtime' #4.61
+    - Is a reference implementation of OCI container run-time spec #4.61
+    - Interfaces with Host OS to create container #4.63
+      . Example: In Linux, runc will interact with 'namespaces' & 'cgroups' #4.63
+    - Starts container process as a child process and then runc exits immediately #4.63
+    - Binary in Linux: - docker-runc
+    - 'shim' #65:
+      . Once runc exits after creating container, shim becomes the parent for container
+        taking up some responsibilities
+          - Keeping STDIN & STDOUT open
+          - Reports Container exit status back to daemon 
+      . Binary in Linux: - docker-containerd-shim
+   5. Container
+    - All containers share access to the Host's kernel
+      
+      
+
+  

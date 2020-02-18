@@ -1,0 +1,6 @@
+
+# Container
+  + Is a runtime of the Image
+  + Multiple containers can be started from the same image #95
+  
+  

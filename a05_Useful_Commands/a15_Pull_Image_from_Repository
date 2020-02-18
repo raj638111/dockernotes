@@ -1,0 +1,23 @@
+
+-- Pull Docker Image (Example: ubuntu image)
+
+  docker image pull ubuntu:latest
+  
+  + This pulls the image from Docker hub repository
+
+    latest: Pulling from library/ubuntu
+    660c48dd555d: Pull complete
+    4c7380416e78: Pull complete
+    421e436b5f80: Pull complete
+    e4ce6c3651b3: Pull complete
+    be588e74bd34: Pull complete
+    Digest: sha256:7c67a2206d3c04703e5c23518707bdd4916c057562dd51c74b99b2ba26af0f79
+    Status: Downloaded newer image for ubuntu:latest
+
+-- Pull image by digest #87
+
+  docker image pull alpine@sha256:c0537...7c0a7726c88e2bb7584dc96
+  sha256:c0537...7726c88e2bb7584dc96: Pulling from library/alpine
+  cfc728c1c558: Pull complete
+  Digest: sha256:c0537ff6a5218...7c0a7726c88e2bb7584dc96
+  Status: Downloaded newer image for alpine@sha256:c0537...bb7584dc96  

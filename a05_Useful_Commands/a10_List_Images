@@ -1,0 +1,7 @@
+
+-- List docker images
+
+  docker image ls       
+    REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+    img1                latest              2810cbd384d2        7 weeks ago         690MB
+    hello-world         latest              05a3bd381fc2        2 months ago        1.84kB  

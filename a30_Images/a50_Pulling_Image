@@ -1,0 +1,19 @@
+# Examples
+  1. docker image pull redis:latest
+    + 'latest' do not mean they are the latest #4.77
+  2. docker image pull alpine
+    + If no tag name is specified, docker will assume the tag name as 'latest' #4.77
+    
+# Pulling from Docker Hub unofficial registry
+  + Just prepend repository name with user name
+  + Ex: docker image pull nigelpoulton/tu-demo:v2 #4.78
+  
+# Pulling from 3rd party registries #4.78
+  + Prepend repository name with DNS name
+  + Ex: docker pull gcr.io/nigelpoulton/tu-demo:v2 (From Google Container Registry)
+  
+# Pull all images from a repository #4.78
+  + Use -a flag
+  + docker image pull -a nigelpoulton/tu-demo
+  + Note:
+    - If a repository contains Images for multiple architecture and platforms, it will likely fail #4.78     

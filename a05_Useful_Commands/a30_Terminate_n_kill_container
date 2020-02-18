@@ -1,0 +1,9 @@
+
+-- Stop & Kill the Container #4.47
+
+  Stop: 
+    docker container stop nervous_shirley  #4.106
+    docker container stop 3027eb64487
+  Kill: 
+    docker container rm nervous_shirley
+    docker container rm 3027eb64487

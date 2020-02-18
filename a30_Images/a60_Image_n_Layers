@@ -1,0 +1,14 @@
+
+# An image is composed of multiple layers #80
+
+# Storage driver #84
+
+  + Is responsible for stacking layers and presenting them as a single unified system
+  + Ex: Linux storage drivers #84
+    - AUFS
+    - overlay2
+    
+# Image layers can also be shared b/w multiple images #85    
+    
+    
+    

@@ -1,0 +1,14 @@
+
+-- Attach to running container #4.46
+
+  docker container ls
+  
+  CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+  68955e9a417c        ubuntu:latest       "/bin/bash"         2 minutes ago       Up 2 minutes                            nervous_shirley
+  c0a97e061e6b        ubuntu:latest       "/bin/bash"         4 minutes ago       Up 4 minutes                            competent_shannon
+  
+  docker container exec -it nervous_shirley bash #106
+  root@68955e9a417c:/# 
+  syntax: docker container exec -options <container-name or container-id> <command>
+  ** A NEW shell is created and we are attached to that. `ps` command will show 2 shell process
+     running. So typing exit, will not terminate the container #106

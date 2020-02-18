@@ -1,0 +1,9 @@
+
+-- Run a container from Image #4.42
+  docker container run -it ubuntu:latest /bin/bash 
+  root@04e8b6b26608:/# **The no is first 12 number of container ID #4.103
+  
+  + it: Make container interactive and attach current terminal to shell of container #4.42
+  + ** Search for the image in local host, if not found, will search in docker hub #4.103
+  + **Ctrl-PQ
+    Use this to exit the bash shell without terminating

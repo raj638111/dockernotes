@@ -1,0 +1,7 @@
+
+
+# General
+  + Exists in each docker host
+  + Is by default empty normally after a clean docker installation #4.71
+  + Location in Linux #4.71
+    /var/lib/docker/<storage-driver>

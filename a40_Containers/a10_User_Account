@@ -1,0 +1,5 @@
+
+# Become member of 'docker' UNIX group #101
+  + usermod -aG docker <user>
+  + **Log back and login in to the shell again for this to work
+    

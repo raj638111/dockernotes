@@ -1,0 +1,6 @@
+
+-- List digest #87
+
+  docker image ls --digests alpine
+  REPOSITORY TAG DIGEST IMAGE ID CREATED SIZE
+  alpine latest sha256:3dcd...f73a 4e38e38c8ce0 10 weeks ago 4.8 MB

@@ -1,0 +1,8 @@
+
+# Delete images (By image id) #89
+
+  docker image rm 02674b9cb179    
+  
+# Delete all images #89
+
+  docker image rm $(docker image ls -q) -f  

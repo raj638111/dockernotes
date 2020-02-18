@@ -1,0 +1,43 @@
+
+# Docker Engine
+  + Core container runtime that runs container #4.13
+  + we also refer as Docker or Docker Platform #4.57 
+  
+# Mac Edition
+  + Uses minimum VM to run containers. Just for development alone #4.9
+  
+# Edition
+  + Community edition: 4 month support #4.14
+  + Enterprise edition: 12 months  
+  
+# Versioning scheme
+  + YY.MM.xx
+  
+# Open source project
+  + is called; Moby #4.15  
+  
+# OCI: (Open Container Initiative) #4.17
+  + To standardize image and runtime specification 
+  + Since version 1.11 Docker Engine conforms to OCI rumtime spec  
+  + BC: CoreOs, ...
+  
+# Components #4.31
+  + Docker Engine
+  + Docker Compose
+  + Docket Machine
+  + Notary Command line 
+  
+# Client & Servier(Docket Engine) Communication
+  + Happens through Docker Remote API #4.40  
+  
+# Docket Image
+  + Is effectively a stopped Container #4.41
+  + Contains enough of OS & code to run the application #4.42
+  + Pulling:
+    - Process of getting image into ***Docker Host
+  + Unique ID
+    - Each image gets unique id: #4.42    
+
+# Container #4.42
+  + Is a running instance of an image
+      

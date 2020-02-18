@@ -1,0 +1,9 @@
+
+# Content Hash / Crypto ID
+  + Image & Layer has their own content hash  #88
+  
+
+# Distribution Hash
+  + Is a hash of the compressed content
+  + Need because content hash might change when the Image & Layer are compressed(For push & pull)
+  

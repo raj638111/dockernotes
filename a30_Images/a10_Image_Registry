@@ -1,0 +1,19 @@
+
+# General
+  + Images 
+    - Are *pulled from Image Registry #4.72 #4.70
+    - Popular image registry: Docker Hub
+  + Images are made up of multiple layers stacked on top of each other #4.69
+  + Image Layers 
+    1. Cut down operating system #4.69
+    2. Files and dependencies required to run the application
+    3. App (hmmm I have included this)
+    
+# Image Registry structure
+  + Contains multiple Image Repositories #4.74
+    - Contains multiple Images #4.74
+    
+# Docker Hub
+  + Contains,
+    - Official Repositories #4.75
+    - Unofficial Repositories        

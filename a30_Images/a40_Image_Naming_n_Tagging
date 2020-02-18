@@ -1,0 +1,10 @@
+
+# Name & Tag
+  + docker image pull <repository>:<tag> #4.77
+  
+# Multiple tags
+  + A single image can have multiple tags #4.78
+      
+  
+  
+          

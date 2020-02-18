@@ -1,0 +1,4 @@
+
+  
+# Check docker service status (Linux) #101
+  + service docker status    
