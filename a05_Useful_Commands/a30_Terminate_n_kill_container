@@ -7,3 +7,7 @@
   Kill: 
     docker container rm nervous_shirley
     docker container rm 3027eb64487
+
+-- Remove all containers
+
+  docker rm $(docker ps -aq)

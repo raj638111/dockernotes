@@ -1,2 +1,8 @@
-
-105
+CONTAINER ID        IMAGE                                             COMMAND                  CREATED             STATUS                             PORTS                                                      NAMES
+a72c079abede        bde2020/spark-worker:2.4.0-hadoop2.7              "/bin/bash /worker.sh"   19 seconds ago      Up 17 seconds                      0.0.0.0:8081->8081/tcp                                     spark-worker
+d42ee03a088d        bde2020/spark-master:2.4.0-hadoop2.7              "/bin/bash /master.sh"   19 seconds ago      Up 18 seconds                      0.0.0.0:7077->7077/tcp, 6066/tcp, 0.0.0.0:8080->8080/tcp   spark-master
+4414e2570356        bde2020/hive:2.3.2-postgresql-metastore           "entrypoint.sh /bin/…"   9 minutes ago       Up 16 seconds                      0.0.0.0:10000->10000/tcp, 10002/tcp                        hive-server
+d51237a5eaec        bde2020/hive:2.3.2-postgresql-metastore           "entrypoint.sh /opt/…"   9 minutes ago       Up 16 seconds                      10000/tcp, 0.0.0.0:9083->9083/tcp, 10002/tcp               hive-metastore
+0ec6ef5c2e6e        bde2020/hive-metastore-postgresql:2.3.0           "/docker-entrypoint.…"   9 minutes ago       Up 17 seconds                      5432/tcp                                                   hive-metastore-postgresql
+58ce7f1e9b8c        bde2020/hadoop-datanode:2.0.0-hadoop2.7.4-java8   "/entrypoint.sh /run…"   9 minutes ago       Up 17 seconds (health: starting)   0.0.0.0:50075->50075/tcp                                   datanode
+e59c39df5043        bde2020/hadoop-namenode:2.0.0-hadoop2.7.4-java8   "/entrypoint.sh /run…"   9 minutes ago       Up 18 seconds (health: starting)   0.0.0.0:50070->50070/tcp                                   namenode

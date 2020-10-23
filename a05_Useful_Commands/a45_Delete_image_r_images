@@ -5,4 +5,9 @@
   
 # Delete all images #89
 
-  docker image rm $(docker image ls -q) -f  
+  docker image rm $(docker image ls -q) -f
+
+
+# List all running / non-running container
+
+  docker ps -a
